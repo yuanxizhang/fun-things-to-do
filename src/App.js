@@ -4,8 +4,6 @@ import AddNew from './components/AddNew';
 import TodoList from './components/TodoList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import './index.css';
 
 class App extends Component {
     state = {
