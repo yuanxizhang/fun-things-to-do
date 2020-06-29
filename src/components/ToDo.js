@@ -1,11 +1,16 @@
 import React from 'react';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import '../index.css';
 
-const Todo = (props) => {
-    return(
-      <div className='list-item'>
-        {props.content}
-        <button class="delete is-pulled-right"></button>
-      </div>
+const Todo = ( props ) => {
+    return (
+        <div className='list-item'>
+		      {props.content}
+		      <Button className="float-right" variant="danger" size="sm" onClick={() => {props.onDelete(props.id)}}>X</Button>
+		    </div>
     );
-  }
+};
+
+export default Todo;
+

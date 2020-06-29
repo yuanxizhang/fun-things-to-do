@@ -1,14 +1,21 @@
 import React from 'react';
-import './App.css';
-import './Todo';
+import Todo from './Todo';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ListGroup from 'react-bootstrap/ListGroup';
+import '../index.css';
 
-const TodoList = (props) => {
+const TodoList = ( props ) => {
     const todos = props.tasks.map((todo, index) => {
-      return <Todo content={todo} key={index} id={index} />
+      return <ListGroup.Item><Todo content={todo} key={index} id={index} onDelete={props.onDelete} /></ListGroup.Item>
     })
-    return( 
-      <div className='list-wrapper'>
+
+    return ( 
+      <ListGroup variant="flush">
         {todos}
-      </div>
+      </ListGroup>
     );
-  }
+};
+
+
+export default TodoList;
+
