@@ -6,10 +6,9 @@ const Todo = ( props ) => {
     return (
         <div className='list-item'>
 		      {props.content}
-		      <Button className="float-right" variant="danger" size="sm" onClick={() => {props.onDelete(props.id)}}>X</Button>
+		      <Button className="float-right" variant="secondary" size="sm" onClick={() => {props.onDelete(props.id)}}>X</Button>
 		    </div>
     );
 };
 
 export default Todo;
-

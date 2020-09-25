@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import Header from './components/Header';
-import AddNew from './components/AddNew';
+import CreateTodo from './components/CreatTodo';
 import TodoList from './components/TodoList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
