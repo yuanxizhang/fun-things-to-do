@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
  
  class CreateTodo extends Component {
   state = {
-    text: ''
+    content: ''
   };
  
   handleChange = event => {
     this.setState({
-      text: event.target.value
+      content: event.target.value
     });
   };
  
@@ -26,10 +26,10 @@ import { connect } from 'react-redux';
             <input
               type="text"
               onChange={event => this.handleChange(event)}
-              value={this.state.text}
+              value={this.state.content}
             />
           </p>
-          <input type="submit" />
+          <button type="submit">Add</button>
         </form>
       </div>
     );

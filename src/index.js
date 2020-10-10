@@ -9,7 +9,7 @@ import App from './App';
 import manageTodo from './reducers/manageTodo';
 
 let store = createStore(manageTodo);
- 
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
